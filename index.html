@@ -5,9 +5,11 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat+Subrayada&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
 </head>
+
+
   <meta charset="UTF-8" />
   <title>Clean Eats NYC</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -24,12 +26,18 @@
   </div>
   
   <div class="spotlight-text">
-      <h2> REAL FOOD. REAL GOOD. </h2>
-      </div>
+      <h2> REAL FOOD. REAL GOOD. </h2> 
+  </div>
 
-    <div>
+  <div class="main-para">
+      <p>A BLOG FOR NEW YORKERS LOOKING FOR CLEAN EATS AROUND THE CITY.</p>
+
+  </div>
+
+  
+  <div>
       <p class="spotlight-para">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus nisi est, eget hendrerit diam luctus ac. Vivamus mattis rutrum sem quis vulputate. Aenean in elementum nunc. Aliquam et felis lacus.
+        HIGHLY RATED, NEW, TRENDY AND INTERESTING FOOD THAT IS UNPROCESSED AND UNREFINED IN NEW YORK CITY. FROM QUICK BITES TO FULL SERVICE, WE’RE SERVING UP A LARGE SELECTION OF RESTAURANTS AND THEIR BEST DISHES IN A CLASSIC BLOG FORMAT. WE’RE EXCITED TO FACILITATE YOUR DINING EXPERIENCE AND HELP YOU EXPLORE THE WORLD OF FRESH AND ORGANIC LOCAL FOOD IN THE BIG APPLE.
       </p>
     </div>
 
@@ -41,19 +49,41 @@
     <div></div>
   </div>
 
-  <div class="spotlight-photo-2">
-    <img src="/" alt="Spotlight Image" />
+  <div class="spotlight-photo">
+    <div class="spotlight-text">
+      <div class="text-box">
+
+        <h3 class="big-text">Let's eat</h3>
+
+      </div>
+      <h3>CONTACT US: CLEANEATSNYC@GMAIL.COM</h3>
+    </div>
+    <img src="https://i1.pickpik.com/photos/958/500/43/food-healthy-meal-dinner-preview.jpg" alt="Spotlight Image" />
   </div>
 
 
 
   <div class="footer-content">
-    <h3>Contact</h3>
   </div>
 
 </body>
 
 <style>
+
+  body{
+    margin:0;
+  }
+
+  .text-box{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+  }
+  .spotlight-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   
 
 .hero-image img {
@@ -73,18 +103,74 @@
   font-family: "Montserrat Subrayada", sans-serif;
   font-weight: 400;
   font-style: normal;
-};
+}
 
-.spotlight-text {
+h2 {
   color: black;
   text-align: left;
-  font-family: 'Manrope';
+  font-family: "Manrope", serif;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 300px;
+  
+
+}
+
+h3{
+  margin: 0;
+  color: black;
+  font-family: "Manrope", serif;
+  font-weight: 200px;
+  
+}
+
+
+.big-text {
+  text-transform: uppercase;
+  font-size: 80px;
+  writing-mode: vertical-rl;
+  transform:scale(-1);
+  position: relative;
+  left: 190px;
+  bottom: 0px;
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+
+}
+.main-para {
+  color: black;
+  text-align: left;
+  font-family: "Manrope", serif;
+  font-size: 20px;
+  font-weight: 100px;
 
 }
 
 
+.spotlight-para {
+  color: black;
+  text-align: left;
+  font-family: "Manrope", serif;
+  font-size: 20px;
+  font-weight: 130px;
+  margin-bottom: 100px;
+}
+.spotlight-photo {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.spotlight-photo img {
+width: 50%;
+height:auto;}
+
+
+  
 
 </style>
 
