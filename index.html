@@ -41,13 +41,28 @@
       </p>
     </div>
 
-  <div class="container-pages">
-    <div ></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+<div class="navigationtxt">
+    <h1>Bronx</h1> 
+
+    <h2>Brooklyn</h2>
+      
+    <h3>Manhattan</h3> 
+
+    <h4>Queens</h4> 
+
+    <h5>Staten Island</h5> 
   </div>
+
+
+<div class="navigationboxes">
+
+  <div class="rectangle1"></div>
+  <div class="rectangle2"></div>
+  <div class="rectangle3"></div>
+  <div class="rectangle4"></div>
+  <div class="rectangle5"></div>
+
+</div>
 
   <div class="spotlight-photo">
     <div class="spotlight-text">
@@ -83,6 +98,7 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
   }
   
 
@@ -92,6 +108,7 @@
   margin: 0;
   padding: 0;
   display: block;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -130,7 +147,7 @@ h3{
   writing-mode: vertical-rl;
   transform:scale(-1);
   position: relative;
-  left: 190px;
+  /* left: px; */
   bottom: 0px;
   font-family: "Montserrat Subrayada", sans-serif;
   font-weight: 400;
@@ -167,10 +184,121 @@ justify-content: space-between;
 
 .spotlight-photo img {
 width: 50%;
-height:auto;}
+height:auto;
+}
+
+.navigationtxt {
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+justify-items: right;
+position:absolute;
+top: 0px;
+right: 8px;
+z-index: 10;
+
+}
+
+.navigationtxt h1 {  
+  color: black;
+  text-align: left;
+  font-family: "Manrope", serif;
+  font-size: 40px;
+  font-weight: 300px;
+  margin-block-end: 44px;
+  margin-block-start: 44px;
+
+}
+
+.navigationtxt h3 {  
+  color: black;
+  text-align: left;
+  font-family: "Manrope", serif;
+  font-size: 40px;
+  font-weight: 300px;
+  margin-block-end: 44px;
+  margin-block-start: 51px;
+
+}
+
+.navigationtxt h4 {  
+  color: black;
+  text-align: left;
+  font-family: "Manrope", serif;
+  font-size: 40px;
+  font-weight: 300px;
+  margin-block-end: 44px;
+  margin-block-start: 49px;
+
+}
+
+.navigationtxt h5 {  
+  color: black;
+  text-align: left;
+  font-family: "Manrope", serif;
+  font-size: 40px;
+  font-weight: 300px;
+  margin-block-end: 54x;
+  margin-block-start: 51px;
+
+}
+
+.navigationboxes {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: right;
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+
+}
 
 
+.rectangle1{
+  width: 130px;
+  height: 50px;
+  background-color: white;
+  display: block;
+  margin-block-end: 40px;
+  margin-block-start: 48px;
   
+}
+
+.rectangle2{
+  width: 190px;
+  height: 50px;
+  background-color: white;
+  display: block;
+  margin-block-end: 54px;
+  margin-block-start: 50px;
+}
+
+.rectangle3{
+  width: 230px;
+  height: 50px;
+  background-color: white;
+  display: block;
+  margin-block-end: 54px;
+  margin-block-start: 54px;
+}
+
+.rectangle4{
+  width: 167px;
+  height: 50px;
+  background-color: white;
+  display: block;
+  margin-block-end: 54px;
+  margin-block-start: 54px;
+}
+
+.rectangle5{
+  width: 274px;
+  height: 50px;
+  background-color: white;
+  display: block;
+  margin-block-end: 44px;
+  margin-block-start: 44px;
+  
+}
+
 
 </style>
 
