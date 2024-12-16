@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
@@ -11,35 +9,32 @@
 
 
   <meta charset="UTF-8" />
-  <title>Home</title>
+  <title>About</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
 </head>
 
-<body>
+<body style="background-color: #A0B2D6;"> 
 
   <div class="hero-image"> 
     <div class="title-overlay"> 
-      <h> CLEAN EATS NYC </h>
+      <h> ABOUT </h>
     </div>
-    <img src=https://ucarecdn.com/e2f8ecad-b07e-491d-8b4b-257dbc6ff65d/-/crop/2278x1106/0,1001/-/preview/3000x3000/ alt="Hero Image" /> </div>
+    <img src=https://ucarecdn.com/b7aed84c-e22f-45a7-b779-1ddfe110013a/-/crop/1000x441/0,37/-/preview/3000x3000/Healthy-meal-salad.jpg alt="Hero Image" /> </div>
   </div>
   
   <div class="spotlight-text">
-    <a href="about.html">REAL FOOD. REAL GOOD.</a>
+    <a href="index.html">AN ORGANIC SOLUTION.</a>
   </div>
 
-  <div class="main-para">
-      <p>A BLOG FOR NEW YORKERS LOOKING FOR CLEAN EATS AROUND THE CITY.</p>
+  <div class="paras">
+      <h1>EATING CLEAN, DELICIOUS FOOD IS EASIER THAN IT SOUNDS. SOMETIMES IT’S A STRUGGLE FINDING THE PERFECT LUNCH SPOT OR A DELICIOUS DINNER RESTAURANT OFFERING EXACTLY WHAT YOU’RE CRAVING. THAT’S WHERE WE COME IN. EXPLORE WHOLESOME MEALS AND FRESH FLAVORS; WE HAVE SUGGESTIONS FOR EVERY CRAVING.</p>
 
-  </div>
-
-  
-  <div>
-      <p class="spotlight-para">
-        HIGHLY RATED, NEW, TRENDY AND INTERESTING FOOD THAT IS UNPROCESSED AND UNREFINED IN NEW YORK CITY. FROM QUICK BITES TO FULL SERVICE, WE’RE SERVING UP A LARGE SELECTION OF RESTAURANTS AND THEIR BEST DISHES IN A CLASSIC BLOG FORMAT. WE’RE EXCITED TO FACILITATE YOUR DINING EXPERIENCE AND HELP YOU EXPLORE THE WORLD OF FRESH AND ORGANIC LOCAL FOOD IN THE BIG APPLE.
-      </p>
+     <h2>OUR GOAL IS TO SUPPORT LOCAL NYC RESTAURANTS AND BRING COMMUNITY TOGETHER IN A FLAVORFUL, EXCITING WAY!</h2>
     </div>
+
+<div class="para-rect">
+</div>
 
 <div class="navigationtxt">
     <h1><a href="bronx.html"> Bronx </a></h1> 
@@ -53,7 +48,6 @@
     <h5><a href= statenisland.html> Staten Island</a></h5> 
   </div>
 
-
 <div class="navigationboxes">
 
   <div class="rectangle1"></div>
@@ -64,19 +58,22 @@
 
 </div>
 
-  <div class="spotlight-photo">
-    <div class="spotlight-head">
-      <div class="text-box">
+<div class="columntxt">
+    <h1> LET'S TALK </h1>
+    <h2>EMAIL:</h2>
+    <h3>CLEANEATSNYC</h3>
+    <h4>@GMAIL.COM</h4> 
 
-        <h3 class="big-text">Let's eat</h3>
+</div>
 
-      </div>
-      <h3>CONTACT US: CLEANEATSNYC@GMAIL.COM</h3>
-    </div>
-    <img src="https://i1.pickpik.com/photos/958/500/43/food-healthy-meal-dinner-preview.jpg" alt="Spotlight Image" />
-  </div>
+<div class="rects">
+<div class="rects2"></div>
+<div class="rects3"></div>
+<div class="rects4"></div>
 
-
+<div class="bottom-img">
+    <img src=https://ucarecdn.com/e5837955-5ea3-4e9a-8339-40d1dcf47110/-/crop/1936x1500/99,0/-/preview/3000x3000/pexels-photo-6488855.jpeg alt="Bottom Image" /> 
+</div>
 
 
 </body>
@@ -102,10 +99,10 @@
    font-family: "Manrope", serif;
    font-weight: 900px;
    font-size: 45px;
-   margin-top: 30px;
+   margin-top: 60px;
   }
   
-   .spotlight-text :hover {
+  .spotlight-text :hover {
 
     text-decoration: underline;
 
@@ -167,35 +164,32 @@ h3 {
 
 
 }
-.main-para {
-  color: black;
-  text-align: left;
-  font-family: "Manrope", serif;
-  font-size: 20px;
-  font-weight: 100px;
+.paras {
+ grid-template-columns: auto;
+ float: left;
+ width: 50%;
+ color: black;
+ font-family: "Manrope", serif;
+ z-index: 100;
+ 
+}
 
+.paras h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.paras h2 {
+
+    font-weight: lighter;
+    font-size: 30px;
+   z-index: 100;
 }
 
 
-.spotlight-para {
-  color: black;
-  text-align: left;
-  font-family: "Manrope", serif;
-  font-size: 20px;
-  font-weight: 130px;
-  margin-bottom: 100px;
-}
-.spotlight-photo {
 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
 
-.spotlight-photo img {
-width: 50%;
-height:auto;
-}
 
 .navigationtxt {
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -206,6 +200,7 @@ right: 8px;
 z-index: 10;
 
 }
+
 
 .navigationtxt h1 {  
   color: black;
@@ -253,14 +248,15 @@ z-index: 10;
 
 .navigationtxt a {
 
-  text-decoration: none;
-  color: black;
+text-decoration: none;
+color: black;
 }
 
 .navigationtxt :hover {
 
-  text-decoration: underline;
+text-decoration: underline;
 }
+
 
 .navigationboxes {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -320,6 +316,130 @@ z-index: 10;
   
 }
 
+.para-rect{
+    width: 720px;
+    height: 470px;
+    background-color: white;
+   display: block;
+   margin-block-end: 300px;
+   margin-block-start: 15px;
+ z-index: -1;
+ position: absolute;
+ left: auto;
+
+}
+
+.columntxt{
+
+    display: grid;
+    grid-template-columns: auto;
+    float: left;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: -1000px;
+}
+
+.columntxt h1{
+
+    font-size: 70px;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+
+}
+
+.columntxt h2{
+  
+  font-family: "Manrope", serif;
+  font-size: 40px;
+}
+
+.columntxt h3{
+  
+  font-family: "Manrope", serif;
+  font-size: 40px;
+}
+
+.columntxt h4{
+  
+  font-family: "Manrope", serif;
+  font-size: 40px;
+  bottom: 100px
+}
+
+.bottom-img img{
+    max-width: 180%;
+    max-height: 180%;
+    position: relative;
+    left: 780px;
+    bottom: -200px;
+}
+
+
+.rects {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  left: auto;
+  bottom: -600px;
+    z-index: -1;
+}
+
+.rects2 {
+
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    left: auto;
+    bottom: -155px;
+    z-index: -1;
+
+}
+
+.rects3 {
+
+display: flex;
+flex-direction: column;
+width: 330px;
+height: 60px;
+background-color: white;
+position: absolute;
+left: auto;
+bottom: -240px;
+z-index: -1;
+
+
+}
+
+
+.rects4 {
+
+display: flex;
+flex-direction: column;
+width: 300px;
+height: 60px;
+background-color: white;
+position: absolute;
+left: auto;
+bottom: -350px;
+z-index: -1;
+
+}
+
+@media (max-width: 450px) {
+
+
+    
+}
 
 
 </style>
